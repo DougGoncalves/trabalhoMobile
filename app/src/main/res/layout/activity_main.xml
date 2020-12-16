@@ -155,7 +155,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/hotel" />
+            app:srcCompat="@drawable/star" />
 
     </LinearLayout>
 

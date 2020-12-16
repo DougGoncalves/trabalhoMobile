@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import br.com.douggoncalves.trabalhomobile.DetailsActivity;
 import br.com.douggoncalves.trabalhomobile.R;
 import br.com.douggoncalves.trabalhomobile.model.RecentsData;
 
@@ -45,13 +46,13 @@ public class RecentsAdapter extends RecyclerView.Adapter<RecentsAdapter.RecentsV
         holder.price.setText(recentsDataList.get(position).getPrice());
         holder.placeImage.setImageResource(recentsDataList.get(position).getImageUrl());
 
-//        holder.itemView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i=new Intent(context, DetailsActivity.class);
-//                context.startActivity(i);
-//            }
-//        });
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(context, DetailsActivity.class);
+                context.startActivity(i);
+            }
+        });
 
     }
 
